@@ -1,0 +1,29 @@
+name: gogland
+version: '171.4694.61'
+summary: Up and Coming Go IDE
+description: |
+  Gogland is the codename for a new commercial IDE 
+  by JetBrains aimed at providing an ergonomic 
+  environment for Go development.
+
+grade: stable
+confinement: classic
+architectures:
+  - amd64
+
+apps:
+  gogland:
+    command: bin/gogland.sh
+    desktop: gogland.desktop
+
+parts:
+  desktop:
+    after:
+      - gogland
+    plugin: dump
+    source: .
+    prime:
+      - gogland.desktop
+  gogland:
+    plugin: dump
+    source: https://download.jetbrains.com/go/gogland-171.4694.61.tar.gz

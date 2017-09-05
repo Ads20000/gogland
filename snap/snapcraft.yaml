@@ -1,5 +1,5 @@
 name: gogland
-version: '172.3757.46'
+version: '172.3968.45'
 summary: Up and Coming Go IDE
 description: |
   Gogland is the codename for a new commercial IDE 
@@ -26,4 +26,4 @@ parts:
       - gogland.desktop
   gogland:
     plugin: dump
-    source: https://download.jetbrains.com/go/gogland-172.3757.46.tar.gz
+    source: https://download.jetbrains.com/go/gogland-172.3968.45.tar.gz
